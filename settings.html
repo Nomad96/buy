@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/settings.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <ul class="logo">
+            <li><a href="index.html"><img src="img/logo.png" alt=""><span>Buy SSL</span></a></li>
+        </ul>
+        <ul class="menu">
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span>12</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">Login</a> <span>or</span> <a href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="title">
+            <h1>personal area</h1>
+            <div class="image">
+                <img src="img/user.png" alt="">
+                <span>David Doe</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="personalMenu">
+                            <ul>
+                                <li><a href="profile.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
+                                </li>
+                                <li><a class="active" href="settings.html"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
+                                </li>
+                                <li><a href="ssl_list.html"><i class="fa fa-lock" aria-hidden="true"></i> SSL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="personalInfo">
+                            <form action="">
+                                <div class="personalTable">
+
+
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="name">First name:</td>
+                                            <td class="text"><input type="text" name="name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Last Name</td>
+                                            <td class="text"><input type="text" name="last name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Username</td>
+                                            <td class="text"><input type="text" name="username"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Email</td>
+                                            <td class="text"><input type="email" name="email"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Birth day</td>
+                                            <td class="text"><input type="text" name="date" class="date"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Phone number</td>
+                                            <td class="text"><input type="text" class="phone" name="phone"></td>
+                                        </tr>
+                                    </table>
+
+
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="name">Country</td>
+                                            <td class="text"><input type="text" name="country"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">City</td>
+                                            <td class="text"><input type="text" name="city"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Region</td>
+                                            <td class="text"><input type="text" name="region"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Address</td>
+                                            <td class="text"><input type="text" name="address"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Apartment</td>
+                                            <td class="text"><input type="text" name="apartment"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">House</td>
+                                            <td class="text"><input type="text" name="house"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="saveChanges">Save changes</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        $(document).ready(function (e) {
+            $('.phone').mask('(000) 000-0000');
+
+            $(".date").flatpickr();
+
+        });//ready
+    </script>
+</div>
+</body>
+</html>

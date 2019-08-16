@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
+          rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet"
+          href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="scss/main.css">
+    <link rel="stylesheet"
+          href="scss/login.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <ul class="logo">
+            <li><a href="index.html"><img src="img/logo.png" alt=""><span>Buy SSL</span></a></li>
+        </ul>
+        <ul class="menu">
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span>12</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">Login</a> <span>or</span> <a href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="title">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="registerForm">
+            <form action="">
+                <div class="formGrid">
+                    <div>
+                        <p>Name</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <p>Password</p>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <p>Repeat Password</p>
+                        <input type="password">
+                    </div>
+                </div>
+                <div class="terms">
+                    <input id="terms" type="checkbox">
+                    <label for="terms">By clicking Register, you agree to the <a href="#">Terms and Conditions</a> set
+                        out by this site, including our Cookie Use.</label>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+    </main>
+</div>
+
+<div class="termsModalWrap">
+    <div class="termsModal">
+        <div class="termsHead">
+            <h3>Terms and Conditions</h3>
+            <button>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="termsContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae deleniti perspiciatis
+                reprehenderit suscipit. Accusantium aliquid aut cupiditate enim eos facilis iste laboriosam odit
+                optio, quidem! Dolore esse eveniet expedita id iure nobis non quia quo soluta vel! </p>
+
+            <p>Esse ex iusto nemo numquam soluta? Ad dignissimos facilis harum, minus mollitia non praesentium
+                quaerat quas, quis quos repellendus repudiandae sit sunt, tempora voluptas! Alias aspernatur,
+                atque
+                debitis dolor dolore dolorem dolorum eaque id iusto necessitatibus neque odio possimus quae
+                quaerat
+                quia repellat totam vel, velit vitae voluptatem? Accusantium adipisci alias aliquam aperiam
+                cupiditate, deserunt dolore natus repudiandae veritatis. Nisi, numquam, quasi.</p>
+            <p>Ab adipisci atque, autem, debitis ducimus incidunt inventore iste, laboriosam quas temporibus ut
+                voluptas. Aliquam assumenda atque culpa, error est explicabo ipsum magni minus molestias
+                nesciunt
+                possimus, recusandae rerum sapiente tempore temporibus vitae voluptas voluptatem voluptatum? Ab
+                ad
+                aperiam est eum inventore labore, necessitatibus quaerat repudiandae totam velit! Assumenda et
+                maiores nihil quas sed suscipit unde veniam vero. Animi aperiam autem doloremque, doloribus
+                ducimus
+                explicabo labore maiores minima molestiae nam quaerat quas quos, soluta ut veritatis. Aspernatur
+                autem consequuntur deleniti dicta dolor exercitationem in, laboriosam maiores non obcaecati
+                officia
+                optio possimus provident quis suscipit, tempora tempore vel velit voluptas voluptates.</p>
+        </div>
+        <div class="termsFooter"></div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function (e) {
+        $(document).on('click', '.terms a', function (e) {
+            e.preventDefault();
+            $('.termsModalWrap').addClass('visible');
+            $('body').css({'overflow': 'hidden'});
+        });
+
+        $(document).on('click', '.termsHead button', function (e) {
+            e.preventDefault();
+            $('.termsModalWrap').removeClass('visible');
+            $('body').css({'overflow': 'initial'});
+        });
+
+
+        $(document).mouseup(function (e) {
+            let targetOne = $('.termsModal'),
+                targetTwo = $('.termsHead button');
+
+
+            if (!targetOne.is(e.target) &&
+                targetOne.has(e.target).length === 0 &&
+                !targetTwo.is(e.target) &&
+                targetTwo.has(e.target).length === 0) {
+
+                $('.termsModalWrap').removeClass('visible');
+                $('body').css({'overflow': 'initial'});
+            }
+        });
+    });//ready
+</script>
+</body>
+</html>

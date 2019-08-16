@@ -1,0 +1,368 @@
+body {
+  background-color: #efece7; }
+
+.wrapper {
+  max-width: none; }
+
+/* ============== header ============= */
+header {
+  text-align: center;
+  position: relative;
+  padding: 54px 104px 90px;
+  z-index: 0;
+  display: block;
+  background: #a0ddc9;
+  color: #287058;
+  /* ============== ribbon ============= */
+  /* ============== headerTitle ============= */
+  /* ============== webWindow ============= */ }
+  header .ribbon {
+    width: 185px;
+    height: 33px;
+    line-height: 33px;
+    margin: 0 auto 44px;
+    position: relative;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    text-transform: uppercase;
+    background: #3597de; }
+    header .ribbon span {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.5px; }
+    header .ribbon i:first-of-type, header .ribbon i:nth-of-type(2) {
+      position: absolute;
+      left: -13px;
+      bottom: -13px;
+      z-index: -1;
+      border: 13px solid transparent;
+      border-right-color: #14507a;
+      -webkit-animation: edge .5s;
+      -moz-animation: edge .5s;
+      -ms-animation: edge .5s;
+      animation: edge .5s; }
+    header .ribbon i:nth-of-type(2) {
+      left: auto;
+      right: -13px;
+      border-right-color: transparent;
+      border-left-color: #14507a; }
+    header .ribbon i:last-of-type, header .ribbon i:nth-of-type(3) {
+      position: absolute;
+      width: 44px;
+      bottom: -13px;
+      left: -31px;
+      z-index: -2;
+      border: 16px solid #3f81b1;
+      border-left-color: transparent;
+      -webkit-animation: back .6s;
+      -moz-animation: back .6s;
+      -ms-animation: back .6s;
+      animation: back .6s;
+      -webkit-transform-origin: 100% 0;
+      -moz-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0; }
+    header .ribbon i:last-of-type {
+      left: auto;
+      right: -31px;
+      border-left-color: #2183c9;
+      border-right-color: transparent;
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      transform-origin: 0 0; }
+  header .headerTitle h3 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500; }
+  header .headerTitle p {
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+    max-width: 329px;
+    display: block;
+    margin: 40px auto 0;
+    background: #a0ddc9; }
+    header .headerTitle p::after {
+      content: '';
+      position: absolute;
+      width: 660px;
+      height: 1px;
+      background: rgba(145, 123, 96, 0.32);
+      left: -50%;
+      top: 50%;
+      z-index: -1;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  header .webWindow {
+    margin-top: 30px;
+    max-width: 340px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e8edee;
+    font-size: 14px;
+    position: relative; }
+    header .webWindow img {
+      width: 100%; }
+    header .webWindow span {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px; }
+      header .webWindow span i {
+        margin-right: 3px; }
+  @media screen and (max-width: 767px) {
+    header {
+      padding-left: 15px;
+      padding-right: 15px; }
+      header .headerTitle h3 {
+        font-size: 26px;
+        line-height: 34px; }
+      header .headerTitle p::after {
+        content: none; } }
+
+/* ============== main ============= */
+main {
+  background-color: #efece7;
+  /* ============== section ============= */ }
+  main section {
+    /* ============== filter ============= */
+    /* ============== ssls ============= */ }
+    main section.filter {
+      padding-top: 40px;
+      color: #656565;
+      padding-bottom: 40px;
+      /* ============== filterOption ============= */ }
+      main section.filter h3 {
+        text-align: center;
+        font-size: 37px;
+        line-height: 45px;
+        font-weight: 500; }
+      main section.filter > p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+        text-transform: uppercase; }
+      main section.filter .filterOption {
+        margin-top: 20px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, minmax(150px, 250px)); }
+        main section.filter .filterOption button {
+          max-width: 100%;
+          width: 100%;
+          padding: 10px 15px;
+          background-color: #fff;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;
+          border: 1px solid #c0c0c0;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          cursor: pointer;
+          -webkit-transition: 0.3s all;
+          -moz-transition: 0.3s all;
+          -ms-transition: 0.3s all;
+          -o-transition: 0.3s all;
+          transition: 0.3s all;
+          -webkit-transform: translateY(3px);
+          -moz-transform: translateY(3px);
+          -ms-transform: translateY(3px);
+          -o-transform: translateY(3px);
+          transform: translateY(3px); }
+          main section.filter .filterOption button.active {
+            background: #14507a;
+            color: #fff; }
+          main section.filter .filterOption button:hover {
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+            -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125); }
+          main section.filter .filterOption button:focus {
+            outline: none; }
+    main section.sslS {
+      margin-top: 50px;
+      padding-bottom: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(289px, 1fr)); }
+      main section.sslS .ssl {
+        background-color: #9adced;
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125); }
+        main section.sslS .ssl > a {
+          color: #656565;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 3px;
+          display: block;
+          position: relative; }
+          main section.sslS .ssl > a:hover {
+            text-decoration: none; }
+            main section.sslS .ssl > a:hover .sslHead {
+              color: #fff; }
+              main section.sslS .ssl > a:hover .sslHead::before {
+                height: 100%; }
+        main section.sslS .ssl .sslHead {
+          padding: 30px 30px 15px;
+          background-color: #fff;
+          position: relative;
+          z-index: 2; }
+          main section.sslS .ssl .sslHead::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0;
+            background-color: #14507a;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            -webkit-transition: 0.3s all;
+            -moz-transition: 0.3s all;
+            -ms-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            transition: 0.3s all; }
+          main section.sslS .ssl .sslHead .sslStar {
+            width: 82px;
+            height: 15px;
+            background-image: url("../img/stars.png");
+            background-repeat: no-repeat; }
+            main section.sslS .ssl .sslHead .sslStar.star-5 {
+              background-position-y: -90px; }
+            main section.sslS .ssl .sslHead .sslStar.star-45 {
+              background-position-y: -75px; }
+            main section.sslS .ssl .sslHead .sslStar.star-4 {
+              background-position-y: -60px; }
+            main section.sslS .ssl .sslHead .sslStar.star-35 {
+              background-position-y: -45px; }
+            main section.sslS .ssl .sslHead .sslStar.star-3 {
+              background-position-y: -30px; }
+          main section.sslS .ssl .sslHead p {
+            margin-bottom: 0; }
+          main section.sslS .ssl .sslHead .promo {
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            z-index: 1;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%); }
+            main section.sslS .ssl .sslHead .promo > div {
+              width: 62px;
+              height: 33px;
+              text-align: center;
+              position: relative; }
+              main section.sslS .ssl .sslHead .promo > div::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 10px 0 0;
+                position: absolute;
+                bottom: -10px;
+                right: 0; }
+              main section.sslS .ssl .sslHead .promo > div.promoSale {
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 33px;
+                background-color: #ff8327;
+                border-bottom: 1px solid #ff8327;
+                bottom: 2px; }
+                main section.sslS .ssl .sslHead .promo > div.promoSale::after {
+                  border-color: #fd6c00 transparent transparent; }
+              main section.sslS .ssl .sslHead .promo > div.promoHot {
+                margin-top: 2px;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 33px;
+                background-color: #ea4f3b;
+                border-bottom: 1px solid #ea4f3b; }
+                main section.sslS .ssl .sslHead .promo > div.promoHot::after {
+                  border-color: #cd2b16 transparent transparent; }
+        main section.sslS .ssl .sslBody {
+          padding: 20px 30px 30px;
+          background-color: #9adced;
+          color: #156072; }
+          main section.sslS .ssl .sslBody .sslPrice {
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 700; }
+            main section.sslS .ssl .sslBody .sslPrice sub, main section.sslS .ssl .sslBody .sslPrice sup {
+              font-size: 15px; }
+          main section.sslS .ssl .sslBody .sslInfo p {
+            margin-bottom: 0;
+            line-height: 30px;
+            font-weight: 500; }
+          main section.sslS .ssl .sslBody .addToCart {
+            margin-top: 15px; }
+            main section.sslS .ssl .sslBody .addToCart button {
+              margin-left: auto;
+              cursor: pointer;
+              text-transform: capitalize;
+              font-size: 14px;
+              font-weight: 600;
+              -webkit-border-radius: 25px;
+              -moz-border-radius: 25px;
+              border-radius: 25px;
+              background-color: rgba(9, 9, 9, 0.3);
+              padding: 10px 14px;
+              border: 1px solid #9adced;
+              display: block;
+              -webkit-transition: 0.3s width;
+              -moz-transition: 0.3s width;
+              -ms-transition: 0.3s width;
+              -o-transition: 0.3s width;
+              transition: 0.3s width;
+              overflow: hidden;
+              width: 43px;
+              white-space: nowrap;
+              color: transparent; }
+              main section.sslS .ssl .sslBody .addToCart button i {
+                margin-right: 10px;
+                color: #fff; }
+              main section.sslS .ssl .sslBody .addToCart button:focus {
+                outline: none; }
+              main section.sslS .ssl .sslBody .addToCart button:hover {
+                width: 150px;
+                color: #fff; }
+  @media screen and (max-width: 767px) {
+    main section.filter .filterOption {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px; }
+      main section.filter .filterOption button {
+        font-size: 10px;
+        font-weight: 700; }
+    main section.sslS {
+      margin-top: 0; } }
+
+/*# sourceMappingURL=style.css.map */

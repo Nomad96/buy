@@ -1,0 +1,127 @@
+.title {
+  background-color: #32b9da;
+  color: #fff;
+  padding: 44px 30px;
+  position: relative;
+  min-height: 170px; }
+  .title h1 {
+    text-align: center;
+    font-size: 51px;
+    line-height: 51px;
+    font-weight: 500; }
+    .title h1 + p {
+      text-align: center;
+      font-weight: 500; }
+
+main .info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  main .info > div {
+    padding: 38px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700; }
+    main .info > div > p {
+      font-size: 40px; }
+    main .info > div:first-of-type {
+      background: rgba(50, 185, 218, 0.93); }
+    main .info > div:nth-of-type(2) {
+      background: #4ec2df; }
+    main .info > div:nth-of-type(3) {
+      background: #5dc7e2; }
+    main .info > div:nth-of-type(4) {
+      background: #6bcce4; }
+    main .info > div:nth-of-type(5) {
+      background: #a5e0ef; }
+    main .info > div:nth-of-type(6) {
+      background: #96dbec; }
+    main .info > div:nth-of-type(7) {
+      background: #88d6e9; }
+    main .info > div:last-of-type {
+      background: #79d1e7; }
+  @media screen and (max-width: 576px) {
+    main .info {
+      grid-template-columns: repeat(2, 1fr); } }
+main .infoCart {
+  padding: 44px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+  main .infoCart .domain {
+    display: flex;
+    justify-content: space-between; }
+    main .infoCart .domain .price {
+      font-size: 28px;
+      line-height: 30px;
+      font-weight: 700; }
+      main .infoCart .domain .price sub, main .infoCart .domain .price sup {
+        font-weight: 400;
+        font-size: 15px; }
+    main .infoCart .domain .year {
+      position: relative; }
+      main .infoCart .domain .year select {
+        border: 2px solid #32b9da;
+        padding: 6px 20px;
+        background-color: transparent;
+        font-weight: 500; }
+        main .infoCart .domain .year select option {
+          font-weight: 500; }
+  main .infoCart .addCart {
+    margin-top: 25px; }
+    main .infoCart .addCart button {
+      max-width: 220px;
+      width: 100%;
+      cursor: pointer;
+      padding: 10px 0;
+      margin: 0 auto;
+      display: block;
+      background: #fd6c00;
+      border: none;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -moz-box-shadow: 0 1px 1px rgba(9, 9, 9, 0.25);
+      -webkit-box-shadow: 0 1px 1px rgba(9, 9, 9, 0.25);
+      box-shadow: 0 1px 1px rgba(9, 9, 9, 0.25); }
+  main .infoCart img {
+    display: block;
+    margin: 30px auto 0;
+    width: 218px; }
+main .tabs {
+  margin-bottom: 40px; }
+  main .tabs a {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #32b9da; }
+  main .tabs .tab-pane {
+    margin-top: 30px; }
+    main .tabs .tab-pane p {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500; }
+    main .tabs .tab-pane table {
+      width: 100%; }
+      main .tabs .tab-pane table tr:first-of-type td {
+        border-top: none; }
+      main .tabs .tab-pane table td {
+        padding: 10px 5px;
+        border-bottom: 1px solid #eaeaea;
+        border-top: 1px solid #eaeaea; }
+      main .tabs .tab-pane table .name {
+        width: 220px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #898989; }
+      main .tabs .tab-pane table .text {
+        font-size: 16px;
+        font-weight: 500; }
+
+/*# sourceMappingURL=single.css.map */

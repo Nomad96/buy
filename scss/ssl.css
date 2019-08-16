@@ -1,0 +1,145 @@
+.title {
+  background-color: #32b9da;
+  color: #fff;
+  padding: 44px 30px;
+  position: relative;
+  min-height: 170px; }
+  .title h1 {
+    text-align: center;
+    font-size: 51px;
+    line-height: 51px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: capitalize; }
+    .title h1 + p {
+      text-align: center;
+      font-weight: 500; }
+  .title .image {
+    bottom: -70px;
+    position: absolute; }
+    .title .image img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 2px solid #32b9da;
+      background-color: #32b9da;
+      width: 140px;
+      left: 0; }
+    .title .image span {
+      display: inline-block;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      transform: translateY(-10px);
+      margin-left: 10px;
+      font-weight: 500; }
+  @media screen and (max-width: 767px) {
+    .title {
+      min-height: auto;
+      padding: 20px; }
+      .title h1 {
+        font-size: 30px; }
+      .title .image {
+        display: none; } }
+
+main {
+  background-color: #efefef; }
+  main .info {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  main .personalInfo {
+    background-color: #f9f9f9;
+    padding: 15px; }
+  main .personalTable {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    main .personalTable table {
+      width: 100%; }
+    main .personalTable tr:nth-of-type(odd) {
+      background-color: rgba(101, 101, 101, 0.05); }
+    main .personalTable tr:first-of-type td {
+      border-top: none; }
+    main .personalTable tr:last-of-type td {
+      border-bottom: none; }
+    main .personalTable thead {
+      background-color: rgba(101, 101, 101, 0.36); }
+      main .personalTable thead th {
+        padding: 10px;
+        color: #212529 !important;
+        text-align: center;
+        border: 1px solid #ffff; }
+    main .personalTable td {
+      padding: 10px 5px;
+      border: 1px solid #eaeaea;
+      text-align: center; }
+      main .personalTable td a {
+        color: #656565;
+        font-size: 12px; }
+        main .personalTable td a:hover {
+          text-decoration: none; }
+          main .personalTable td a:hover i {
+            color: #32b9da; }
+    main .personalTable .name {
+      width: 320px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #656565;
+      text-align: left;
+      padding-left: 15px;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+      main .personalTable .name p {
+        margin-bottom: 0;
+        font-size: 12px;
+        color: #949494; }
+      main .personalTable .name div {
+        font-size: 12px; }
+        main .personalTable .name div span {
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          padding: 3px 5px;
+          color: #fff;
+          font-size: 11px; }
+          main .personalTable .name div span.month {
+            background-color: #949494; }
+          main .personalTable .name div span.serCode {
+            background-color: #32b9da; }
+          main .personalTable .name div span.status {
+            background-color: #ff8327; }
+    main .personalTable .text {
+      font-size: 16px;
+      font-weight: 500;
+      color: #656565; }
+    main .personalTable .exp {
+      font-size: 14px; }
+      main .personalTable .exp span {
+        color: #3EA884;
+        font-weight: 500; }
+    main .personalTable .issued {
+      color: #3EA884;
+      font-weight: 700; }
+    main .personalTable .canceled {
+      color: #A83E3E;
+      font-weight: 700; }
+  @media screen and (max-width: 767px) {
+    main .orders {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px; }
+      main .orders .item {
+        display: block;
+        text-align: center;
+        justify-content: flex-start; }
+    main .personalTable {
+      margin-top: 0px;
+      width: 100%;
+      display: block;
+      overflow: auto; }
+      main .personalTable table {
+        width: 100%;
+        min-width: 700px; } }
+
+/*# sourceMappingURL=ssl.css.map */

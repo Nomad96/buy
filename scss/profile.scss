@@ -1,5 +1,6 @@
 @import "media";
 
+@import "main";
 .title {
   background-color: #32b9da;
   color: #fff;
@@ -48,7 +49,7 @@
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     min-height: auto;
     padding: 20px;
     h1 {
@@ -149,7 +150,7 @@ main {
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     .orders {
       grid-template-columns: repeat(2, 1fr);
       grid-row-gap: 20px;

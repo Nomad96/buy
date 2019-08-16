@@ -35,6 +35,23 @@ $(document).ready(function (e) {
         }
     });
 
+    /**
+     * footer function
+     * @type {jQuery}
+     */
+    let windowHeight = $(window).height(),
+        footerHeight = $('footer').innerHeight(),
+        documentHeight = $(document).height();
+
+    if ((documentHeight - windowHeight)> footerHeight) {
+        $('footer').css({'top': documentHeight - footerHeight +'px',
+            'opacity': 1
+        })
+    }else {
+        $('footer').css({'top': windowHeight - footerHeight +'px',
+            'opacity': 1
+        })
+    }
 
 
 });//ready

@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/style.css">
-    <title>Document</title>
+    <link rel="icon" href="img/logo.png">
+    <title>| Homepage</title>
 </head>
 <body>
 <div class="wrapper">
@@ -26,9 +26,12 @@
                     <span>12</span>
                 </a>
             </li>
+
+            <!-- todo isAuth = false-->
             <!--<li>
                 <a href="login.html">Login</a> <span>or</span> <a href="register.html">Register</a>
             </li>-->
+            <!-- todo isAuth = true-->
             <li class="profile"><a href="profile.html">
                 <img src="img/user.png" alt="ssl user"> <span>David</span>
             </a>
@@ -43,7 +46,7 @@
     <!-- header -->
     <header>
         <div class="ribbon">
-            <span>Buy SSLs</span>
+            <span>Buy SSL</span>
             <i></i>
             <i></i>
             <i></i>
@@ -327,10 +330,16 @@
         </section>
     </main>
 </div>
+
+<footer>
+<p>&#169; 2019 Buy SSL. All rights reserved</p>
+</footer>
+
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 <script>
     $(document).ready(function (e) {
+
 
         let targetOne = $('ul.submenu'),
             targetTwo = $('li.profile > a');

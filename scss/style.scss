@@ -1,5 +1,5 @@
 @import "media";
-
+@import "main";
 body{
   background-color: #efece7;
 }
@@ -156,7 +156,7 @@ header {
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     padding-left: 15px;
     padding-right: 15px;
     .headerTitle {
@@ -484,7 +484,7 @@ main {
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     section {
       &.filter {
         .filterOption {

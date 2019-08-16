@@ -2,7 +2,6 @@
 
 html, body {
   font-family: 'Montserrat', sans-serif;
-  //background-color: #efefef;
 }
 
 .wrapper {
@@ -146,7 +145,7 @@ nav {
         }
       }
 
-      @media screen and (min-width: 991px) {
+      @media #{$min991} {
         > li {
           &:hover {
             .submenu {
@@ -182,7 +181,7 @@ nav {
     }
   }
 
-  @media  #{$m575}{
+  @media  #{$max575}{
     padding-left: 0;
     padding-right: 0;
     ul {
@@ -251,7 +250,29 @@ nav {
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     margin-top: 0;
+  }
+}
+
+main{
+  margin-bottom: 40px;
+}
+
+
+footer {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  //margin-top: 40px;
+  background-color: #656565;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px;
+  font-weight: 700;
+
+  p {
+    margin-bottom: 0;
   }
 }

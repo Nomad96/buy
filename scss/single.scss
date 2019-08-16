@@ -1,3 +1,6 @@
+@import "media";
+@import "main";
+
 .title {
   background-color: #32b9da;
   color: #fff;
@@ -14,6 +17,13 @@
     & + p {
       text-align: center;
       font-weight: 500;
+    }
+  }
+  @media #{$max767} {
+    min-height: auto;
+    padding: 20px;
+    h1 {
+      font-size: 30px;
     }
   }
 }
@@ -68,7 +78,7 @@ main {
       }
     }
 
-    @media screen and (max-width: 576px) {
+    @media #{$max575} {
       grid-template-columns: repeat(2, 1fr);
     }
   }

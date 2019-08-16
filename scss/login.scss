@@ -1,5 +1,5 @@
 @import "media";
-
+@import "main";
 
 .title {
   background-color: #32b9da;
@@ -22,7 +22,7 @@
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     min-height: auto;
     padding: 20px;
     h1 {
@@ -289,7 +289,7 @@ main {
 
     }
 
-    @media #{$m575} {
+    @media #{$max575} {
       form {
         .formGrid {
           grid-template-columns: 1fr
@@ -380,7 +380,7 @@ main {
     transform: translateY(0);
   }
 
-  @media #{$m767}{
+  @media #{$max767}{
     .termsModal {
       width: calc(100% - 30px);
       margin-top: 20px;

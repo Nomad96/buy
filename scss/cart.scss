@@ -1,5 +1,5 @@
 @import "media";
-
+@import "main";
 .title {
   background-color: #32b9da;
   color: #fff;
@@ -20,7 +20,7 @@
       font-weight: 500;
     }
   }
-  @media #{$m767} {
+  @media #{$max767} {
     min-height: auto;
     padding: 20px;
     h1 {
@@ -222,7 +222,7 @@ main {
     }
   }
 
-  @media #{$m767} {
+  @media #{$max767} {
     .cartTable {
       .cartContent {
         display: block;
@@ -246,7 +246,7 @@ main {
     }
   }
 
-  @media #{$m575} {
+  @media #{$max575} {
     .cartTable {
       .cartTitle {
         padding-left: 15px;

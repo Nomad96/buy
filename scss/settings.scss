@@ -1,5 +1,7 @@
 @import "media";
 @import "main";
+
+/* ============== title ============= */
 .title {
   background-color: #32b9da;
   color: #fff;
@@ -33,7 +35,6 @@
       background-color: #32b9da;
       width: 140px;
       left: 0;
-
     }
 
     span {
@@ -58,7 +59,7 @@
     }
   }
 }
-
+/* ============== main ============= */
 main {
   background-color: #efefef;
 
@@ -67,8 +68,6 @@ main {
     padding-bottom: 15px;
   }
 
-
-  //  3EA884
   .personalInfo {
     background-color: #f9f9f9;
     padding: 15px;

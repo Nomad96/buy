@@ -1,6 +1,7 @@
 @import "media";
 @import "main";
 
+/* ============== title ============= */
 .title {
   background-color: #32b9da;
   color: #fff;
@@ -28,6 +29,7 @@
   }
 }
 
+/* ============== main ============= */
 main {
   .info {
     display: grid;

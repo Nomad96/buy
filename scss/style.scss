@@ -1,11 +1,19 @@
 @import "media";
 @import "main";
-body{
+
+body {
   background-color: #efece7;
 }
 
 .wrapper {
   max-width: none;
+}
+
+nav {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============== header ============= */
@@ -18,7 +26,6 @@ header {
   background: #a0ddc9;
   color: #287058;
 
-  /* ============== ribbon ============= */
   .ribbon {
     width: 185px;
     height: 33px;
@@ -90,7 +97,6 @@ header {
     }
   }
 
-  /* ============== headerTitle ============= */
   .headerTitle {
     h3 {
       text-align: center;
@@ -126,7 +132,6 @@ header {
     }
   }
 
-  /* ============== webWindow ============= */
   .webWindow {
     margin-top: 30px;
     max-width: 340px;
@@ -177,11 +182,13 @@ header {
 
 /* ============== main ============= */
 main {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #efece7;
 
-  /* ============== section ============= */
   section {
-    /* ============== filter ============= */
     &.filter {
       padding-top: 40px;
       color: #656565;
@@ -202,7 +209,6 @@ main {
         text-transform: uppercase;
       }
 
-      /* ============== filterOption ============= */
       .filterOption {
         margin-top: 20px;
         text-align: center;
@@ -262,7 +268,6 @@ main {
       }
     }
 
-    /* ============== ssls ============= */
     &.sslS {
       margin-top: 50px;
       padding-bottom: 40px;
